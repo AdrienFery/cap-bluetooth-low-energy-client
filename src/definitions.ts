@@ -117,7 +117,7 @@ export interface BluetoothGATTCharacteristicWriteOptions{
   id: string,
   service: BluetoothGATTServices | number,
   characteristic: BluetoothGATTCharacteristics | number
-  value: string //Base64 encoded string of byte array
+  value: ArrayBuffer 
 }
 
 export interface BluetoothGATTCharacteristicWriteResult{
